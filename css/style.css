@@ -13,12 +13,32 @@ body {
     position: fixed;
 }
 
-body {
+#body-index {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     height: 100vh;
 }
+
+.menu{
+    flex-direction: row;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.menu>a{
+    text-decoration: none;
+    margin: 10px;
+}
+.menu-text{
+    list-style: none;
+    color: #ba63ba;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
 
 /* _______INDEX_______ */
 
@@ -32,7 +52,7 @@ body {
 #logo {
     margin-top: 3px;
     width: 100vw;
-    max-width: 70vh;
+    max-width: 65vh;
 }
 
 
@@ -68,7 +88,7 @@ body {
     margin-top: 8px;
 }
 
-.start-div:hover{
+.start-div:hover {
     transform: scale(1.1);
 }
 
@@ -87,14 +107,7 @@ body {
 
 
 /*MEDIA QUERY*/
-@media only screen and (min-width: 768px) {
-
- 
-
-    
-
-
-}
+@media only screen and (min-width: 768px) {}
 
 /*______QUESTIONS________*/
 
@@ -113,4 +126,21 @@ body {
     display: flex;
     align-items: flex-start;
     margin-top: 15px;
+}
+
+
+/*_____RESULTS_____*/
+
+.title-style {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-decoration: underline 1.5px;
+    text-underline-offset: 3px;
+}
+
+#body-results{
+    display: flex;
+    flex-direction: column;
 }

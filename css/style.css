@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+html,
+body {
+    width: 100%;
+    background-image: url(/media/bg.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+    position: fixed;
+}
+
+#body-index {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu{
+    flex-direction: row;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.menu>a{
+    text-decoration: none;
+    margin: 10px;
+}
+.menu-text{
+    list-style: none;
+    color: #ba63ba;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+/* _______INDEX_______ */
+
+/*LOGO*/
+.logo-div {
+    display: flex;
+    justify-content: center;
+}
+
+
+#logo {
+    margin-top: 3px;
+    width: 100vw;
+    max-width: 65vh;
+}
+
+
+
+/*(temporal hasta que tengamos gráfica)*/
+#chart-img {
+    width: 35vw;
+    max-width: 150px;
+}
+
+.chart-div {
+    display: flex;
+    justify-content: center;
+}
+
+#chart-div-2 {
+    background-color: rgb(237, 237, 237, .5);
+    display: flex;
+    justify-content: center;
+    /* margin-top: 2vh; */
+    /* border: 2px solid white; */
+    padding: 3%;
+    width: 80%;
+    border-radius: 13px;
+    max-width: 80%;
+}
+
+
+/*boton START*/
+.start-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.start-div:hover {
+    transform: scale(1.1);
+}
+
+#start-p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 0px 25px 0px 25px;
+}
+
+#start-btn {
+    background-color: yellow;
+    width: 200px;
+}
+
+
+
+
+/*MEDIA QUERY*/
+@media only screen and (min-width: 768px) {}
+
+/*______QUESTIONS________*/
+
+/*boton atras*/
+.atras-img {
+    transition: all .2s ease-in-out;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.atras:hover {
+    transform: scale(1.1);
+}
+
+.atras-div {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+
+/*_____RESULTS_____*/
+
+.title-style {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-decoration: underline 1.5px;
+    text-underline-offset: 3px;
+}
+
+#body-results{
+    display: flex;
+    flex-direction: column;
+}

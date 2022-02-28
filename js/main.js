@@ -1,6 +1,5 @@
 let formulario = document.getElementById('formulario');
 
-
 const preguntas = [
     {
         pregunta : '¿Cuál es la capital de Venezuela?',
@@ -42,3 +41,22 @@ for(let i=0; i<preguntas.length;i++){
                         console.log(i)
     formulario.appendChild(fieldset)
 }
+
+//printQuestions: coleccion de preguntas questions. Devuelve el html con las pregs
+//printQuestion: recibe 1 pregunta y devuelve el html de esa preg
+//questions: colección con todas las preg
+
+/* function printQuestion = () => {
+
+    const question = {
+        name: `pregunta${i}`,
+        label: '¿Cual es el nombre mas comun del mundo?',
+        answers: [
+          {label: 'Un bardo', value: 'bardo'},
+          {label: 'Un mercader', value: 'mercader'},
+          {label: 'Un mago', value: 'mago'},
+          {label: 'Un marinero', value: 'marinero'},
+        ]
+      }
+
+} */

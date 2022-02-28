@@ -106,8 +106,12 @@ body {
 
 
 
-/*MEDIA QUERY*/
-@media only screen and (min-width: 768px) {}
+ /*MEDIA QUERY*/
+/*@media only screen and (min-width: 768px) {} */
+
+
+
+
 
 /*______QUESTIONS________*/
 
@@ -126,6 +130,15 @@ body {
     display: flex;
     align-items: flex-start;
     margin-top: 15px;
+}
+
+/*pregunta*/
+#formulario>fieldset>h3{
+    color:rgb(236, 181, 255);
+}
+/*respuestas*/
+#formulario>fieldset>div>label{
+    color:white;
 }
 
 

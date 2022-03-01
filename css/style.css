@@ -142,6 +142,26 @@ body {
 }
 
 
+/*boton NEXT*/
+.next-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.next-div:hover {
+    transform: scale(1.1);
+}
+
+#next-btn {
+    background-color: yellow;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 0px 25px 0px 25px;
+}
+
+
 /*_____RESULTS_____*/
 
 .title-style {

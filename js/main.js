@@ -80,32 +80,44 @@ currentQuestion();
 let counter = 0;
 
 
-function validation(clicked_id) {
+function validationInc(value) {
+    //borra estilo colo blanco y le pone fondo rojo
+    value.classList.remove("option");
+    value.classList.add("option-incorrect")
+    counter += 0;
 
-        
-            clicked_id.classList.remove("option");
-            clicked_id.classList.add("option-incorrect")
-            counter += 0;
-       
-        }
+    //desactiva los botones una vez hecho el click
+    op0.style.pointerEvents = "none"
+    op1.style.pointerEvents = "none";
+    op2.style.pointerEvents = "none";
+    op3.style.pointerEvents = "none";
+    next.disabled = false;
+}
 
-        clicked_id.classList.remove("option");
-        clicked_id.classList.add("option-correct");
-        counter += 1;
-        next.disabled = false;
-    }
+function validationCorr(value) {
+    //borra estilo colo blanco y le pone fondo verde
+    value.classList.remove("option");
+    value.classList.add("option-correct")
+    counter += 1;
 
-//cómo decirle que me borre la clase del botón donde ha hecho click
+    //desactiva los botones una vez hecho el click
+    op0.style.pointerEvents = "none"
+    op1.style.pointerEvents = "none";
+    op2.style.pointerEvents = "none";
+    op3.style.pointerEvents = "none";
+    next.disabled = false;
+}
+
+
+console.log(counter)
 
 
 
-
-
-
-
-//AHOOOOOOORAAAAA HAY QUE: DECIR QUÉ HACER CUANDO SE LE DE AL NEXT
-/* button.classList.add("hide")*/
-
+function nextFunction() {
+    //borrar lo anterior
+    //escribir la siguiente
+    currentQuestion();   
+}
 
 
 

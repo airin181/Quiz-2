@@ -16,31 +16,44 @@
             <a href="/index.html">
                 <img src="https://img.icons8.com/nolan/64/sort-left--v1.png" class="atras-img" />
             </a>
+            <nav>
+                <ul class="menu">
+                    <a href="/index.html">
+                        <li class="menu-text">Home</li>
+                    </a>
+                    <a href="/pages/results.html">
+                        <li class="menu-text">Resultados</li>
+                    </a>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="menu">
-                <a href="/index.html">
-                    <li class="menu-text">Home</li>
-                </a>
-                <a href="/pages/results.html">
-                    <li class="menu-text">Resultados</li>
-                </a>
-            </ul>
-        </nav>
+        
 
     </header>
 
-    <section>
+    <!-- <section id="h1-questions">
         <h1 class="title-style">PREGUNTAS</h1>
-    </section>
+    </section> -->
 
-    <form id="formulario">
-    </form>
-
-    <div class="next-div">
-        <button id="next-btn">SIGUIENTE</button>
-    </div>
+    <main class="container">
+        <div id="question-container" class="question-style">
     
+        </div>
+        <div class="option-container">
+
+            <button class="option" id="op0" onclick="validationInc(op0)"></button>
+      
+            <button class="option" id="op1" onclick="validationInc(op1)"></button>
+      
+            <button class="option" id="op2" onclick="validationInc(op2)" ></button>
+      
+            <button class="option" id="op3" onclick="validationCorr(op3)"></button>
+        </div>
+        <div class="controls">
+            <button id="next" class="button" onclick="nextFunction()">NEXT</button>
+        </div> 
+    </main>
+
     <script src="../js/main.js"></script>
 
 </body>

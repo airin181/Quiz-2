@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="../media/logo.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -50,11 +51,19 @@
             <button class="option" id="op3" onclick="validationCorr(op3)"></button>
         </div>
         <div class="controls">
-            <button id="next" class="button" onclick="nextFunction()">NEXT</button>
+            <button id="next" onclick="nextFunction()">NEXT</button>
         </div> 
     </main>
-
-    <script src="../js/main.js"></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <!--Para autenticación. En esta práctica no la necesitamos así que se comenta-->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="/js/main.js"></script>
+    
 
 </body>
 

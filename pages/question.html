@@ -28,7 +28,7 @@
                 </ul>
             </nav>
         </div>
-        
+
 
     </header>
 
@@ -38,23 +38,33 @@
 
     <main class="container">
         <div id="question-container" class="question-style">
-    
+
         </div>
         <div class="option-container">
 
             <button class="option" id="op0" onclick="validationInc(op0)"></button>
-      
+
             <button class="option" id="op1" onclick="validationInc(op1)"></button>
-      
-            <button class="option" id="op2" onclick="validationInc(op2)" ></button>
-      
+
+            <button class="option" id="op2" onclick="validationInc(op2)"></button>
+
             <button class="option" id="op3" onclick="validationCorr(op3)"></button>
         </div>
         <div class="controls">
             <button id="next" onclick="nextFunction()">NEXT</button>
-        </div> 
+        </div>
     </main>
-    
+
+    <section id="results">
+        <div class="logo-div">
+            <img src="/media/logo.svg" alt="logo" id="logo">
+        </div>
+        <div id="scoreDiv">
+            <p id="score"></p>
+            <button class="button" id="reset" type="reset">TRY AGAIN</button>
+        </div>
+    </section>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -63,7 +73,7 @@
     <!--Para autenticación. En esta práctica no la necesitamos así que se comenta-->
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
     <script src="/js/main.js"></script>
-    
+
 
 </body>
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quiz - Questions</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="../media/logo.svg" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="atras-div">
+            <a href="/index.html">
+                <img src="https://img.icons8.com/nolan/64/sort-left--v1.png" class="atras-img" />
+            </a>
+            <nav>
+                <ul class="menu">
+                    <a href="/index.html">
+                        <li class="menu-text">HOME</li>
+                    </a>
+                    <a href="/pages/results.html">
+                        <li class="menu-text">MY RESULTS</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <!-- <section id="h1-questions">
+        <h1 class="title-style">PREGUNTAS</h1>
+    </section> -->
+
+    <main class="container">
+        <div id="question-container" class="question-style">
+
+        </div>
+        <div class="option-container">
+
+            <button class="option" id="op0" onclick="validationInc(op0)"></button>
+
+            <button class="option" id="op1" onclick="validationInc(op1)"></button>
+
+            <button class="option" id="op2" onclick="validationInc(op2)"></button>
+
+            <button class="option" id="op3" onclick="validationCorr(op3)"></button>
+        </div>
+        <div class="controls">
+            <button id="next">NEXT</button>
+            <button id="validate-btn">VALIDATE</button>
+        </div>
+       
+    </main>
+
+    <section id="results">
+        <div class="logo-div">
+            <img src="/media/logo.svg" alt="logo" id="logo">
+            
+        </div>
+        <div id="scoreDiv">
+            <p id="score"></p>
+            <p id="seeResults"></p>
+            <button class="button" id="reset" type="reset">TRY AGAIN</button>
+        </div>
+    </section>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <!--Para autenticación. En esta práctica no la necesitamos así que se comenta-->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="/js/main.js"></script>
+
+
+</body>
+
+</html>

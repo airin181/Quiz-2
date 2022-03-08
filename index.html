@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./media/logo.svg" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+</head>
+
+<body id="body-index">
+    <div class="logo-div">
+        <img src="/media/logo.svg" alt="logo" id="logo">
+    </div>
+    <section id="logged">
+        <nav id="navbar">
+             <ul class="menu">
+                 <a href="/pages/results.html">
+                     <li class="menu-text">MY RESULTS</li>
+                 </a>
+             </ul>
+         </nav>
+         </div>
+ 
+         <div class="start-div">
+             <button class="button" onclick="window.location.href='/pages/question.html'">START</button>
+         </div>
+    <section class="login-section">
+        
+        <div class="google-btn-div" id="google-btn-div-login">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="google-logo"/>
+            <button id="google-login">Login with Google</button>
+        </div>
+        <p id="account-info"></p>
+        <div class="google-btn-div" id="google-btn-div-logout">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="google-logo"/>
+            <button id="google-logout-btn">Log out with Google</button>
+            
+        </div>
+        
+        <p id="account-info-btm">You need to log in to start playing!</p>
+          
+    </section>
+
+     
+    </section> 
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <!--Para autenticación. En esta práctica no la necesitamos así que se comenta-->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+   <script src="/js/main.js"></script>
+</body>
+
+</html>

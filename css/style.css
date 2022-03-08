@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    background-image: url(/media/bg.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+    position: fixed;
+}
+
+#body-index {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu{
+    flex-direction: row;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.menu>a{
+    text-decoration: none;
+    margin: 10px;
+}
+.menu-text{
+    list-style: none;
+    color: #e68fe6;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+/* _______INDEX_______ */
+
+/*LOGO*/
+.logo-div {
+    display: flex;
+    justify-content: center;
+}
+#logo {
+    margin-top: 3px;
+    width: 100vw;
+    max-width: 65vh;
+}
+
+
+/* SIGN IN BUTTON GOOGLE */
+.login-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.google-btn-div{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 9px;
+    box-shadow: 2px 5px 10px 2px #0000002b;
+    width: 221px;
+    margin-top: 10px;
+}
+
+.google-btn-div:hover{
+    transform: scale(1.1);
+}
+
+.google-logo{
+    width: 40px;
+    height: auto;
+}
+  
+#google-login, #google-logout-btn {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#account-info{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 6px;
+}
+
+#account-info-btm{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+#navbar{
+    display: none;
+    justify-content: center;
+}
+
+
+
+
+
+/*(temporal hasta que tengamos gráfica)*/
+#chart-img {
+    width: 35vw;
+    max-width: 150px;
+}
+
+.chart-div {
+    display: flex;
+    justify-content: center;
+}
+
+#chart-div-2 {
+    background-color: rgb(237, 237, 237, .5);
+    display: flex;
+    justify-content: center;
+    /* margin-top: 2vh; */
+    /* border: 2px solid white; */
+    padding: 3%;
+    width: 80%;
+    border-radius: 13px;
+    max-width: 80%;
+}
+
+
+/*boton START*/
+.start-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.start-div:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    background-color: yellow;
+    width: 216px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: rgb(121 136 151 / 59%) 0px 8px 24px;
+}
+
+.button:hover {
+    transform:scale(1.1)
+}
+
+
+
+
+/*______QUESTIONS________*/
+
+/*boton atras*/
+.atras-img {
+    transition: all .2s ease-in-out;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.atras:hover {
+    transform: scale(1.1);
+}
+
+.atras-div {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#next{
+    margin-top: 15px;
+    background-color: yellow;
+    width: 138px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*___PANEL QUESTION-ANSWERS___*/
+
+/*estilo caja con pregs y resp*/
+.container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*estilo preguntas*/
+#question-container{
+    width: 80%;
+    background-color: #665cffc9;
+    color: white;
+    height: 131px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+#question-container>h3{
+    color: beige;
+    font-family: 'Poppins';
+    font-size: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.question-style{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*estilo respuestas*/
+.option-container{
+    WIDTH: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.option{
+    width: 80%;
+    padding: 13px;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+.option-correct{
+    width: 80%;
+    padding: 13px;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.option-incorrect{
+    width: 80%;
+    padding: 13px;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.option:hover{
+    background-color: #cf79cf;
+}
+
+/*______SHOW SCORE AT THE END_____*/
+
+#results{
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    height: 75vh;
+    justify-content: space-between;
+}
+
+#score, #seeResults{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+}
+
+#seeResults>a{
+    color: rgb(214, 164, 255);
+}
+
+#seeResults{
+    margin:0;
+    font-weight: lighter;
+}
+
+#scoreDiv{
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#reset{
+    margin-bottom: 15px;
+    box-shadow: rgb(121 136 151 / 82%) 0px 8px 24px;
+}
+
+
+
+
+
+
+/*_____RESULTS_____*/
+
+.title-style {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-decoration: underline 1.5px;
+    text-underline-offset: 3px;
+}
+
+#body-results{
+    display: flex;
+    flex-direction: column;
+}
+
+#validate-btn{
+    margin-top: 15px;
+    background-color: rgb(191, 123, 255);
+    width: 138px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (min-width: 768px) {
+
+    .option-container {
+        WIDTH: 80%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 800px;
+    }
+
+    .option-correct {
+        width: 49%;
+    }
+
+    .option-incorrect {
+        width: 49%;
+    }
+
+    .option {
+        width: 49%;
+    }
+    #next, #validate-btn{
+        margin-top: 5vh;
+    }
+    
+    #logo {
+        max-width: 85vh;
+        margin-top:-30px;
+}
+}

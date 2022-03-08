@@ -8,6 +8,7 @@
     <title>Random Quiz</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./media/logo.svg" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 </head>
 
 <body id="body-index">
@@ -15,14 +16,14 @@
         <img src="/media/logo.svg" alt="logo" id="logo">
     </div>
     <section id="logged">
-        <!-- <nav>
+        <nav id="navbar">
              <ul class="menu">
                  <a href="/pages/results.html">
-                     <li class="menu-text">Resultados</li>
+                     <li class="menu-text">MY RESULTS</li>
                  </a>
              </ul>
          </nav>
-         </div>-->
+         </div>
  
          <div class="start-div">
              <button class="button" onclick="window.location.href='/pages/question.html'">START</button>
@@ -31,7 +32,7 @@
         
         <div class="google-btn-div" id="google-btn-div-login">
             <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="google-logo"/>
-            <button id="google-login">Log in with Google</button>
+            <button id="google-login">Login with Google</button>
         </div>
         <p id="account-info"></p>
         <div class="google-btn-div" id="google-btn-div-logout">
@@ -56,7 +57,7 @@
     <!--Para autenticación. En esta práctica no la necesitamos así que se comenta-->
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
 
-    <script src="/index.js"></script>
+   <script src="/js/main.js"></script>
 </body>
 
 </html>

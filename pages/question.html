@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Quiz - Questions</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="../media/logo.svg" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 </head>
 
 <body>
@@ -20,10 +22,10 @@
             <nav>
                 <ul class="menu">
                     <a href="/index.html">
-                        <li class="menu-text">Home</li>
+                        <li class="menu-text">HOME</li>
                     </a>
                     <a href="/pages/results.html">
-                        <li class="menu-text">Resultados</li>
+                        <li class="menu-text">MY RESULTS</li>
                     </a>
                 </ul>
             </nav>
@@ -51,16 +53,20 @@
             <button class="option" id="op3" onclick="validationCorr(op3)"></button>
         </div>
         <div class="controls">
-            <button id="next" onclick="nextFunction()">NEXT</button>
+            <button id="next">NEXT</button>
+            <button id="validate-btn">VALIDATE</button>
         </div>
+       
     </main>
 
     <section id="results">
         <div class="logo-div">
             <img src="/media/logo.svg" alt="logo" id="logo">
+            
         </div>
         <div id="scoreDiv">
             <p id="score"></p>
+            <p id="seeResults"></p>
             <button class="button" id="reset" type="reset">TRY AGAIN</button>
         </div>
     </section>

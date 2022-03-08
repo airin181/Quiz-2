@@ -11,7 +11,7 @@
 html,
 body {
     width: 100%;
-    background-image: url(./media/bg.svg);
+    background-image: url(media/bg.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

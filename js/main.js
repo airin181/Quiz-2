@@ -369,7 +369,7 @@ if (validateBtn != null) {
         //SHOW SCORE -> innerhtml
         console.log("Esto es el score:", score)
         document.getElementById("score").innerHTML = `You got ${score} points!`;
-        document.getElementById("seeResults").innerHTML = `You can see your scores <a href="./results.html">here</a>!`;
+        document.getElementById("seeResults").innerHTML = `You can see your scores <a href="/results.html">here</a>!`;
 
 
         //guardar fecha y hora jugada

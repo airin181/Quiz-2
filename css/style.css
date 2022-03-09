@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 /*font-family: 'Raleway', sans-serif;*/
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -27,22 +27,24 @@ body {
     height: 100vh;
 }
 
-.menu{
+.menu {
     flex-direction: row;
     padding: 0;
     display: flex;
     justify-content: center;
     margin: 0;
 }
-.menu>a{
+
+.menu>a {
     text-decoration: none;
     margin: 10px;
 }
-.menu-text{
+
+.menu-text {
     list-style: none;
     color: #e68fe6;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 
@@ -54,6 +56,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 #logo {
     margin-top: 3px;
     width: 100vw;
@@ -62,7 +65,7 @@ body {
 
 
 /* SIGN IN BUTTON GOOGLE */
-.login-section{
+.login-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +75,7 @@ body {
     align-content: center;
 }
 
-.google-btn-div{
+.google-btn-div {
     display: flex;
     background-color: white;
     padding: 10px;
@@ -82,16 +85,17 @@ body {
     margin-top: 10px;
 }
 
-.google-btn-div:hover{
+.google-btn-div:hover {
     transform: scale(1.1);
 }
 
-.google-logo{
+.google-logo {
     width: 40px;
     height: auto;
 }
-  
-#google-login, #google-logout-btn {
+
+#google-login,
+#google-logout-btn {
     background-color: white;
     border: none;
     padding: 10px;
@@ -99,7 +103,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-#account-info{
+#account-info {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -108,7 +112,7 @@ body {
     margin-top: 6px;
 }
 
-#account-info-btm{
+#account-info-btm {
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -117,7 +121,7 @@ body {
     margin-bottom: 0;
 }
 
-#navbar{
+#navbar {
     display: none;
     justify-content: center;
 }
@@ -177,7 +181,7 @@ body {
 }
 
 .button:hover {
-    transform:scale(1.1)
+    transform: scale(1.1)
 }
 
 
@@ -203,7 +207,7 @@ body {
     margin-bottom: 20px;
 }
 
-#next{
+#next {
     margin-top: 15px;
     background-color: yellow;
     width: 138px;
@@ -219,7 +223,7 @@ body {
 /*___PANEL QUESTION-ANSWERS___*/
 
 /*estilo caja con pregs y resp*/
-.container{
+.container {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -228,7 +232,7 @@ body {
 }
 
 /*estilo preguntas*/
-#question-container{
+#question-container {
     width: 80%;
     background-color: #665cffc9;
     color: white;
@@ -240,7 +244,7 @@ body {
     border-radius: 5px;
 }
 
-#question-container>h3{
+#question-container>h3 {
     color: beige;
     font-family: 'Poppins';
     font-size: 22px;
@@ -250,7 +254,7 @@ body {
     padding-bottom: 5px;
 }
 
-.question-style{
+.question-style {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -258,15 +262,16 @@ body {
 }
 
 /*estilo respuestas*/
-.option-container{
+.option-container {
     WIDTH: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
-.option{
+
+.option {
     width: 80%;
     padding: 13px;
     margin-top: 15px;
@@ -275,7 +280,7 @@ body {
     border-radius: 5px;
 }
 
-.option-correct{
+.option-correct {
     width: 80%;
     padding: 13px;
     margin-top: 15px;
@@ -284,7 +289,7 @@ body {
     border-radius: 5px;
 }
 
-.option-incorrect{
+.option-incorrect {
     width: 80%;
     padding: 13px;
     margin-top: 15px;
@@ -293,13 +298,13 @@ body {
     border-radius: 5px;
 }
 
-.option:hover{
+.option:hover {
     background-color: #cf79cf;
 }
 
 /*______SHOW SCORE AT THE END_____*/
 
-#results{
+#results {
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -308,23 +313,24 @@ body {
     justify-content: space-between;
 }
 
-#score, #seeResults{
+#score,
+#seeResults {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     color: #ffffff;
     text-align: center;
 }
 
-#seeResults>a{
+#seeResults>a {
     color: rgb(214, 164, 255);
 }
 
-#seeResults{
-    margin:0;
+#seeResults {
+    margin: 0;
     font-weight: lighter;
 }
 
-#scoreDiv{
+#scoreDiv {
     width: 80%;
     border-radius: 5px;
     display: flex;
@@ -333,7 +339,7 @@ body {
     cursor: pointer;
 }
 
-#reset{
+#reset {
     margin-bottom: 15px;
     box-shadow: rgb(121 136 151 / 82%) 0px 8px 24px;
 }
@@ -354,12 +360,12 @@ body {
     text-underline-offset: 3px;
 }
 
-#body-results{
+#body-results {
     display: flex;
     flex-direction: column;
 }
 
-#validate-btn{
+#validate-btn {
     margin-top: 15px;
     background-color: rgb(191, 123, 255);
     width: 138px;
@@ -395,12 +401,18 @@ body {
     .option {
         width: 49%;
     }
-    #next, #validate-btn{
+
+    #next,
+    #validate-btn {
         margin-top: 5vh;
     }
-    
+
     #logo {
         max-width: 85vh;
-        margin-top:-30px;
-}
+        margin-top: -30px;
+    }
+
+    #chart-div-2 {
+        width: 60%;
+    }
 }
